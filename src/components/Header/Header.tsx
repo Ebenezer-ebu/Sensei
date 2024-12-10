@@ -10,6 +10,7 @@ export default function Header() {
       state.settings.useSystemMessageForAllChats,
     ]
   );
+  console.log(systemMessage, model, useSystemMessageForAllChats)
   return (
     <header className=" text-center my-2 text-sm dark:text-gray-300 border-b dark:border-none dark:shadow-md py-2 flex items-center justify-between px-2">
       <div className="md:block hidden"></div>
@@ -30,7 +31,7 @@ export default function Header() {
         )}
       </div>
       <div className="">
-        <button className=" text-xl">
+        <button className="text-xl">
           <IonIcon icon={shareOutline} />
         </button>
       </div>

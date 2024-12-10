@@ -2,18 +2,17 @@ import DefaultIdea from "./DefaultIdea";
 
 const defaultIdeas = [
   {
-    idea: "Design database schema",
-    moreContext: "Design a database schema for a social media app",
+    idea: 'What is Bitcoin, and how does it work?',
+    moreContext: 'How is Bitcoin different from regular money?',
   },
   {
-    idea: "Give me code snippet",
-    moreContext:
-      "Give me a code snippet to create a database schema for a social media app",
+    idea: 'Can you explain how crypto wallets work?',
+    moreContext: 'How do crypto wallets store and secure coins?',
   },
-  { idea: "Tell me a joke", moreContext: "Tell me a joke" },
+  { idea: 'How does blockchain technology ensure security?', moreContext: 'How does blockchain keep data safe and secure?' },
   {
-    idea: "Design redux store",
-    moreContext: " Design a redux store for a social media app",
+    idea: 'What are the top-performing cryptocurrencies this month?',
+    moreContext: 'What are the top-performing cryptocurrencies this month?',
   },
 ];
 

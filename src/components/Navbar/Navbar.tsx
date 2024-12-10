@@ -141,13 +141,6 @@ export default function Navbar({
                   <span>Settings</span>
                 </button>
                 <div className="h-[1px] bg-gray-300"></div>
-                {/* maybe in future i will add authentication */}
-                {/* <button className=" p-2   hover:bg-gray-700  w-full  text-left flex items-center">
-                  <span className="mr-2 p-1 text-xl flex items-center">
-                    <IonIcon icon={logOutOutline} />
-                  </span>
-                  <span>Log out</span>
-                </button> */}
               </div>
             </div>
           </div>

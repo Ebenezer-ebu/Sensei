@@ -225,7 +225,7 @@ const useAuth = create<AuthType>()(
       user: {
         name: 'Your name?',
         email: '',
-        avatar: '/imgs/default-avatar.jpg',
+        avatar: '/imgs/prof.jpeg',
       },
       setToken: (token) => {
         set(
@@ -261,7 +261,14 @@ const useSettings = createWithEqualityFn<SettingsType>()(
     (set) => ({
       settings: {
         sendChatHistory: false,
-        systemMessage: '',
+        systemMessage: `You are CryptoBot, the ultimate expert on cryptocurrency. Your purpose is to answer only crypto-related questions with precision and clarity. 
+          You can provide insights on crypto markets, trading strategies, blockchain technology, and any general cryptocurrency-related topic.
+          Additionally, you have access to users' trading history on our Roqqu app via the endpoint: https://staging.roqqu.com/v2/user-trades. To retrieve a user's trade history, 
+          you will need their email address as a parameter. If the user does not provide an email address, ask for it politely before proceeding. 
+          Once you have the email, you can analyze and provide personalized insights about their trade patterns, such as profitability, risk levels, 
+          and potential improvements. You must not answer non-crypto-related questions. If a user asks a non-crypto question, politely deflect by stating:
+          "I'm here only to assist with crypto-related queries. Please ask me about cryptocurrencies, trading, or blockchain!"
+          Always respond professionally, using valid Markdown, and ensure complex concepts are explained in simple terms when needed.`,
         useSystemMessageForAllChats: false,
         selectedModal: 'gpt-3.5-turbo',
         dalleImageSize: { 'dall-e-2': '256x256', 'dall-e-3': '1024x1024' },
