@@ -15,7 +15,7 @@ export default function GptIntro() {
         <button
           title="GPT-3 Turbo"
           className={classNames(
-            "gpt3 uppercase  rounded-md  font-bold p-2 transition  flex-1 flex items-center  dark:text-white justify-center",
+            "uppercase rounded-md font-bold p-2 transition flex-1 flex items-center dark:text-white justify-center",
             {
               "bg-white dark:bg-dark-primary border-2 dark:border-white border-gray-700":
                 isGptThreeSelected,
@@ -32,13 +32,13 @@ export default function GptIntro() {
           >
             <i className="fa-solid fa-bolt "></i>
           </span>
-          <span className="mr-2">gpt - 3.5</span>
+          <span className="mr-2">sen - 3.5</span>
         </button>
 
         <button
           title="GPT - 4"
           className={classNames(
-            "gpt4 uppercase rounded p-2 transition  dark:text-white flex-1 flex  items-center justify-center",
+            "uppercase rounded p-2 transition dark:text-white flex-1 flex items-center justify-center",
             {
               "bg-white dark:bg-dark-primary border-2 dark:border-white border-gray-700":
                 !isGptThreeSelected,
@@ -54,12 +54,12 @@ export default function GptIntro() {
           >
             <IonIcon icon={sparkles} />
           </span>
-          <span className="mr-2">gpt - 4</span>
+          <span className="mr-2">sen - 4</span>
         </button>
       </div>
       <div className=" h-96 flex items-start justify-center">
         <h1 className=" text-4xl font-bold mt-5 text-center text-gray-300">
-          ChatGPT
+          Sensei
         </h1>
       </div>
     </>

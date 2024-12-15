@@ -40,8 +40,8 @@ function App() {
           <i className='fa-regular fa-window-maximize rotate-90'></i>
         </button>
       </div>
-      <div className='p-3 z-10 flex items-center justify-between bg-[#202123] dark:bg-[#343541] border-b sticky top-0  text-gray-300 md:hidden'>
-        <button onClick={() => setActive(true)} className=' text-2xl flex'>
+      <div className='p-3 z-10 flex items-center justify-between bg-[#202123] dark:bg-[#343541] border-b sticky top-0 text-gray-300 md:hidden'>
+        <button onClick={() => setActive(true)} className='text-2xl flex'>
           <IonIcon icon={menuOutline} />
         </button>
         <h2>New chat</h2>
@@ -50,14 +50,14 @@ function App() {
         </button>
       </div>
       <main
-        className={classNames(' w-full transition-all duration-500', {
+        className={classNames('w-full transition-all duration-500', {
           'md:ml-[260px]': active,
         })}
       >
         {isChatsVisible ? <Header /> : <GptIntro />}
         {isChatsVisible && <Chats />}
         <div
-          className={classNames('fixed left-0 px-2  right-0 transition-all duration-500 bottom-0 dark:shadow-lg py-1 shadow-md backdrop-blur-sm bg-white/10 dark:bg-dark-primary/10', {
+          className={classNames('fixed left-0 px-2 right-0 transition-all duration-500 bottom-0 dark:shadow-lg py-1 shadow-md backdrop-blur-sm bg-white/10 dark:bg-dark-primary/10', {
             'dark:bg-dark-primary bg-white': isChatsVisible,
             'md:ml-[260px]': active,
           })}
@@ -71,16 +71,6 @@ function App() {
 
             <div className='dark:bg-inherit'>
               <UserQuery />
-              <footer className='info text-sm py-2 text-gray-700 dark:text-white text-center'>
-                Made With
-                <span className='mx-2'>
-                  <i className='fas fa-heart text-red-500' aria-hidden='true'></i>
-                </span>
-                By
-                <a href='https://github.com/Ebenezer-ebu' target='_blank' rel='noopener noreferrer' className='ml-2 underline'>
-                  E-ben
-                </a>
-              </footer>
             </div>
           </div>
         </div>

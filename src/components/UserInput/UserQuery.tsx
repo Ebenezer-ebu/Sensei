@@ -31,6 +31,7 @@ export default function UserQuery() {
   }
 
   async function handleOnSubmit(e: React.FormEvent<HTMLFormElement>) {
+    console.log(selectedModal);
     e.preventDefault();
     if (query) {
       addChat(createMessage("user", query, "text"));
@@ -48,7 +49,7 @@ export default function UserQuery() {
 
   return (
     <form
-      className="input shadow-md dark:bg-[#40414f] bg-white  dark:border-white border-gray-700 border-2 flex items-center   rounded-md"
+      className="input shadow-md dark:bg-[#40414f] bg-white  dark:border-white border-gray-700 border-2 flex items-center rounded-md"
       onSubmit={handleOnSubmit}
       ref={formRef}
     >
