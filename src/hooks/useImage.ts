@@ -27,9 +27,9 @@ export default function useImage(
     setLoading(true);
     await generateImage(query as string, size, 1)
       .then((image) => {
-        setImage(image.data[0].url);
+        setImage(image!.data[0].url);
         addChat(
-          createMessage("assistant", image.data[0].url, "image_url"),
+          createMessage("assistant", image!.data[0].url, "image_url"),
           index
         );
       })
